@@ -1,0 +1,23 @@
+
+
+[{"name": "Head-rotation", "image":"./photo_fitness.png", "duration":"00:15:11","tags":"head"},
+    {"name": "Head-ciruclar", "image":"./photo_fitness.png", "duration":"00:20:11","tags":"jaw"},
+    {"name": "Neck-Exercise", "image":"./photo_fitness.png","duration":"00:20:00","tags":"flexors"},
+    {"name": "Neck-Exercise", "image":"./photo_fitness.png","duration":"00:30:11","tags":"extensors"},
+    {"name": "Head-anti-rotation", "image":"./photo_fitness.png", "duration":"00:15:11","tags":"head"},
+    {"name": "Eye-Rotation", "image":"./photo_fitness.png", "duration":"00:20:11","tags":"jaw"},
+    {"name": "Neck-Exercise", "image":"./photo_fitness.png","duration":"00:20:00","tags":"flexors"},
+    {"name": "Neck-Exercise", "image":"./photo_fitness.png","duration":"00:30:11","tags":"extensors"},
+    {"name": "Shoulder_exercise", "image":"./photo_fitness.png","duration":"00:01:11","tags":"shoulder"},
+    {"name": "Shoulder-Pushup", "image":"./photo_fitness.png","duration":"00:10:11","tags":"benchpress"},
+    {"name": "Pushup", "image":"./photo_fitness.png","duration":"00:12:11","tags":"triceps"},
+    {"name": "Pushup", "image":"./photo_fitness.png","duration":"00:12:11","tags":"triceps"},
+    {"name": "Face-Exercise", "image":"./photo_fitness.png","duration":"00:12:11","tags":"face"},
+    {"name": "Neck", "image":"./photo_fitness.png","duration":"00:08:11","tags":"neck"},
+    {"name": "Shoulder-Pushup", "image":"./photo_fitness.png","duration":"00:10:11","tags":"benchpress"},
+    {"name": "Shoulder-Pushup", "image":"./photo_fitness.png","duration":"00:10:11","tags":"benchpress"},
+    {"name": "Shoulder-Pushup", "image":"./photo_fitness.png","duration":"00:10:11","tags":"shoulder"},
+    {"name": "Shoulder-Pushup", "image":"./photo_fitness.png","duration":"00:10:11","tags":"shoulder"},
+    {"name": "Burps", "image":"./photo_fitness.png","duration":"00:13:01","tags":"benchpress"}
+  
+]
