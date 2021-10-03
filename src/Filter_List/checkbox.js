@@ -4,9 +4,6 @@ import data from "../Data/ExerciseData.json";
 import { useEffect, useState } from "react";
 import Card from "../Cards/Card";
 
-
-
-
 function Checkbox1(){
 
     const [value, setValue] = useState(""); // search by Name
@@ -20,104 +17,106 @@ function Checkbox1(){
     const [shoulder, setShoulder] = useState(false);
     const [triceps,setBenchPress ] = useState(false);
     const [benchpress, setTriceps] = useState(false);
-    const [tagName, setTagName] = useState("");
+    const [tagName, setTagName] = useState([]);
 
     useEffect(()=>{
         if (head===false){
-            setTagName("");
+           setTagName((prevState) =>prevState.filter((tagName)=>tagName !=="head"));
         }
     },[head]);
 
     useEffect(()=>{
         if (face===false){
-            setTagName("");
+            
+           setTagName((prevState) =>prevState.filter((tagName)=>tagName !=="face"));
+           
         }
     },[face]);
 
     useEffect(()=>{
         if (jaw===false){
-            setTagName("");
+           setTagName((prevState) =>prevState.filter((tagName)=>tagName !=="jaw"));
         }
     },[jaw]);
 
     useEffect(()=>{
         if (neck===false){
-            setTagName("");
+           setTagName((prevState) =>prevState.filter((tagName)=>tagName !=="neck"));
         }
     },[neck]);
 
     useEffect(()=>{
         if (Flexors===false){
-            setTagName("");
+           setTagName((prevState) =>prevState.filter((tagName)=>tagName !=="Flexors"));
         }
     },[Flexors]);
     
     useEffect(()=>{
         if (extensors===false){
-            setTagName("");
+           setTagName((prevState) =>prevState.filter((tagName)=>tagName !=="extensors"));
         }
     },[extensors]);
     
     useEffect(()=>{
         if (shoulder===false){
-            setTagName("");
+           setTagName((prevState) =>prevState.filter((tagName)=>tagName !=="shoulder"));
         }
     },[shoulder]);
     
     useEffect(()=>{
         if (triceps===false){
-            setTagName("");
+           setTagName((prevState) =>prevState.filter((tagName)=>tagName !=="triceps"));
         }
     },[triceps]);
 
     useEffect(()=>{
         if (benchpress===false){
-            setTagName("");
+           setTagName((prevState) =>prevState.filter((tagName)=>tagName !=="benchpress"));
         }
     },[benchpress]);
 
     const handeleClick = (tag)=>{
-        setTagName(tag);
+        setTagName((prevState) => [...prevState,tag]);
         setHead((prev)=> !prev);
     };
 
     const handeleClick2 = (tag)=>{
-        setTagName(tag);
+        setTagName((prevState) => [...prevState,tag]);
         setFace((prev)=> !prev);
     };
     
     const handeleClick3 = (tag)=>{
-        setTagName(tag);
+        setTagName((prevState) => [...prevState,tag]);
         setJaw((prev)=> !prev);
     };
     
     const handeleClick4 = (tag)=>{
-        setTagName(tag);
+        setTagName((prevState) => [...prevState,tag]);
         setNeck((prev)=> !prev);
     };
     
     const handeleClick5 = (tag)=>{
-        setTagName(tag);
+        setTagName((prevState) => [...prevState,tag]);
         setFlexors((prev)=> !prev);
     };
     
     const handeleClick6 = (tag)=>{
-        setTagName(tag);
+        setTagName((prevState) => [...prevState,tag]);
         setExtensors((prev)=> !prev);
     };
     
     const handeleClick7 = (tag)=>{
-        setTagName(tag);
+        setTagName((prevState) => [...prevState,tag]);
         setShoulder((prev)=> !prev);
     };
     
     const handeleClick8 = (tag)=>{
-        setTagName(tag);
+        setTagName((prevState) => [...prevState,tag]);
         setBenchPress((prev)=> !prev);
     };
     
     const handeleClick9 = (tag)=>{
-        setTagName(tag);
+        setTagName((prevState) => [...prevState,tag]);
         setTriceps((prev)=> !prev);
     };
     
@@ -141,15 +140,15 @@ function Checkbox1(){
     </div>
     <div className="box">
 
-{tagName ===""?
-    data.filter((val)=>{
 
+        {tagName.length === 0 ?
+    data.filter((val)=>{   
        return val.name.toLowerCase().includes(value.toLowerCase())
-
     }).map((val)=><Card name ={val.name} image ={val.Image} duration={val.duration}/> )
 :data.filter((val)=>{
-    return val.tags ===tagName
-
+    if (tagName.includes(val.tags) === true ){
+        return val
+    }
  }).map((val)=><Card name ={val.name} image ={val.Image} duration={val.duration}/> )
 
 }
