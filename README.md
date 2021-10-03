@@ -1,3 +1,51 @@
+
+# ReactTask
+
+In this project we contains thumbnails for various exercises in card format.Each card contains image, name of exercise, duration of exercise and tags for that exericse.Tags assinged to the card are not visible.
+we have use some filter to filter the exercise with diffrenet tag name and we have search bar also to search the  various exercise 
+by the Name of the exercise, provide reset button to reset the search bar and display the defaults value and this is responsive website also can we accesses in mobile device.
+
+
+## Deployment
+
+I deploy in Netlify App
+To deploy this project
+first Push this project to github after this I Given Authorizeto netlify to access
+my github account then select the repo and configure the setting and build the site by
+  npm run build
+  then select the domain to set 
+  and then website is deploy
+
+
+  
+## Installation
+
+Install my-project with npm install if you are clone with github. 
+
+
+Folder Name:
+React_Task\exercise
+```bash
+  npm install
+  cd exercise
+  npm start 
+```
+    
+## Demo
+
+https://reactassessment.netlify.app
+
+  
+## 🔗 Links
+https://github.com/jainagda/ReactTask
+(https://www.linkedin.com/in/jai-nagda-4653ba179/)
+  
+## 🚀 About Me
+I'm a Frontend developer...
+
+  
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
