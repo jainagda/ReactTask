@@ -2,8 +2,7 @@
 # ReactTask
 
 In this project we contains thumbnails for various exercises in card format.Each card contains image, name of exercise, duration of exercise and tags for that exericse.Tags assinged to the card are not visible.
-we have use some filter to filter the exercise with diffrenet tag name and we have search bar also to search the  various exercise 
-by the Name of the exercise, provide reset button to reset the search bar and display the defaults value and this is responsive website also can we accesses in mobile device.
+we have use some filter to filter the exercise with using different tag name and we have search bar also to search the  various exercise by the Name of the exercise, provide reset button to reset the search bar and display the defaults value and this is responsive website also can we access in mobile device.
 
 
 ## Deployment
