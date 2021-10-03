@@ -140,19 +140,22 @@ function Checkbox1(){
     </div>
     <div className="box">
 
+    {tagName.length ===0?
+    data.filter((val)=>{
 
-        {tagName.length === 0 ?
-    data.filter((val)=>{   
        return val.name.toLowerCase().includes(value.toLowerCase())
-    }).map((val)=><Card name ={val.name} image ={val.Image} duration={val.duration}/> )
-:data.filter((val)=>{
-    if (tagName.includes(val.tags) === true ){
-        return val
-    }
- }).map((val)=><Card name ={val.name} image ={val.Image} duration={val.duration}/> )
 
-}
-      </div>
+    }).map((val)=><Card name ={val.name} image ={val.Image}/> )
+:data.filter((val)=>{
+let values = null;
+ if (tagName.includes(val.tags) === true ){
+     values= val
+ }
+ return values
+
+ }).map((val)=><Card name ={val.name} image ={val.Image}/> )
+
+}      </div>
      <div id="id1">
                         <ul id="mainmenu">
                               <li  className="submenu101" id="filter1"><h4>filter 1</h4>
