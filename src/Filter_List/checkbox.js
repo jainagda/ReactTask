@@ -145,7 +145,7 @@ function Checkbox1(){
 
        return val.name.toLowerCase().includes(value.toLowerCase())
 
-    }).map((val)=><Card name ={val.name} image ={val.Image}/> )
+    }).map((val)=><Card name ={val.name} image ={val.Image} duration={val.duration}/> )
 :data.filter((val)=>{
 let values = null;
  if (tagName.includes(val.tags) === true ){
@@ -153,7 +153,7 @@ let values = null;
  }
  return values
 
- }).map((val)=><Card name ={val.name} image ={val.Image}/> )
+ }).map((val)=><Card name ={val.name} image ={val.Image} duration={val.duration}/> )
 
 }      </div>
      <div id="id1">
